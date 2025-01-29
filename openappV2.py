@@ -15,6 +15,8 @@ logo = """
 I made random tool
 version2
 
+--made by justme1231234--
+
 """
 
 choice = "0"
