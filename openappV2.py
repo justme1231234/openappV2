@@ -23,7 +23,7 @@ choice = "0"
 
 def get_mac_installed_programs():
     applications_path = "/Applications"
-    programs = [app for app in os.listdir(applications_path) if app.endswith(".app")]
+    programs = [app.replace(".app", " ") for app in os.listdir(applications_path) if app.endswith(".app")]
     return programs
 
 def open_program(program_number, programs):
